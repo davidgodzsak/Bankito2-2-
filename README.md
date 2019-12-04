@@ -1,4 +1,4 @@
-# Bankito2-2-
+# Bankito2ö2ö
 Drop some pills and make some sparkles :sparkling_heart:
 
 ### Run
