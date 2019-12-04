@@ -1,0 +1,153 @@
+/*basic stuff*/
+
+@font-face {
+    font-family: Zircon;
+    src: url(./font/GT-Zirkon-Regular.woff2);
+}
+
+html, body {
+    margin: 0;
+    font-family: Zircon, serif;
+    height: 300%;
+}
+
+/*alignments*/
+
+.d-content {
+    width: 300%;
+    max-width: 1240px;
+    height: 100%;
+    background-color: #050504;
+    margin: 0 auto;
+}
+
+.d-numbers {
+    position: fixed;
+    bottom: 0;
+}
+
+
+.d-row {
+    display: flex;
+}
+
+.d-row p {
+    font-size: 20vw;
+    margin: 0;
+    color: #279474;
+}
+
+/*pills, bubbles*/
+
+.pill {
+    position: relative;
+    top: 50%;
+    width: 12%;
+    transform: translate(-3000px);
+}
+
+.pill > img {
+    width: 120%;
+}
+
+.bubbles {
+    display: grid;
+    position: absolute;
+    z-index: 10;
+}
+
+.bubble {
+    grid-column: 1;
+    grid-row: 1;
+    max-width: 65px;
+    position: relative;
+    transform: scale(0);
+    animation: 2s linear 1600ms infinite bubble-up;
+}
+
+.bubble img {
+    position: relative;
+    width: 100%;
+    top: 100px;
+    animation: 800ms ease-in-out 1600ms infinite alternate bubble-side;
+}
+
+/*animation classes*/
+
+.wiggle {
+    animation: 2s ease-in-out infinite alternate wiggle;
+}
+
+.drop {
+    animation-fill-mode: forwards;
+    animation: 8s ease-out 1 drop;
+    transform: translate(0,4vw);
+}
+
+/*animations*/
+
+@keyframes drop {
+    0% {
+        opacity: 1;
+        transform: translate(0, -2000px);
+    }
+
+    10% {
+        transform: translate(0, -2px);
+    }
+
+    11% {
+        transform: translate(0, 0) rotate(4deg);
+    }
+
+    12% {
+        transform: translate(0, 5px) rotate(2deg);
+    }
+
+    40% {
+       transform: translate(0, 45%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 4vw);
+    }
+}
+
+
+@keyframes wiggle {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-4px, 10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bubble-up {
+    0% {
+        transform: translateY(0) scale(0.2);
+    }
+    25% {
+        transform: translateY(-125px) scale(0.7);
+    }
+    50% {
+        transform: translateY(-250px) scale(1);
+    }
+    100% {
+        transform: translateY(-500px) scale(1);
+    }
+}
+
+
+@keyframes bubble-side {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -20px;
+    }
+}
