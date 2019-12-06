@@ -55,6 +55,27 @@ html, body {
     margin-right: 10%;
 }
 
+/*mobile view*/
+@media only screen and (max-width: 480px) {
+    .d-numbers {
+        display: none;
+    }
+
+    .pills .second-row {
+        display: none;
+    }
+
+    .pills .first-row .pill {
+        display: none;
+    }
+
+    .pills .first-row .pill:last-child{
+        display: block;
+        width: 25%;
+        margin: 0 auto 20px auto;
+    }
+}
+
 /*pills, bubbles*/
 
 .pill {

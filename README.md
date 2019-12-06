@@ -6,8 +6,10 @@ Open index.html in your fav browser.
 
 ### Usage / Good to know
 
-- Copy paste all the resources (content of .d-numbers from index.html, style.css, script.js, img/, font/) where you need to use it. 
-- If position is not fixed anymore remove .d-numbers { position:fixed; bottom: 0} and restylize accordingly
+- Copy paste all the resources (content of .d-content from index.html, style.css, script.js, img/, font/) where you need to use it. 
+- If position is not fixed anymore remove .pills { position:fixed; bottom: 0} and restylize accordingly
+- To enable single bubble for mobile it is better to use dynamic rendering and render only one .pill -> however I have a responsive solution but make sure  to  add `    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+` to header to make it work
 - Font is relatively accessed from style.css
 - No other dependencies (vanillas JS, CSS)
 - Consider resizing pictures for better download times.
