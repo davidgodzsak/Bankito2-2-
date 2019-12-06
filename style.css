@@ -23,46 +23,37 @@ html, body {
 .d-numbers {
     position: absolute;
     bottom: 0;
+    width: 100%;
+    max-width: 1240px;
 }
 
 .pills {
     position: fixed;
     bottom: 0;
+    width: 100%;
+    max-width: 1240px;
 }
 
 .d-row {
     display: flex;
 }
 
-.d-row p {
-    font-size: 20vw;
-    margin: 0;
-    color: #279474;
+.d-numbers svg {
+    width: 100%;
 }
 
-.first-row p {
-    margin-right: 11vw;
+.d-numbers text {
+    fill: #279474;
 }
 
 .first-row .pill {
     margin-left: 10%;
-}
-
-.second-row p {
-    margin-left: 11vw;
+    margin-bottom: 5%;
 }
 
 .second-row .pill {
-    margin-right: 9%;
+    margin-right: 10%;
 }
-
-.pills .first-row {
-    margin-bottom: 8vw;
-}
-.pills .second-row {
-    margin-bottom: 3vw;
-}
-
 
 /*pills, bubbles*/
 
